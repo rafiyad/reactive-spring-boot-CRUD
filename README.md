@@ -41,10 +41,50 @@ git clone https://github.com/rafiyad/reactive-spring-boot-CRUD.git
 cd reactive-spring-boot-CRUD
 ```
 
+
 mvn clean install
 mvn spring-boot:run
 mvn test
 
+## API Endpoints
+The application exposes the following RESTful API endpoints:
+
+1. Create a Resource
+POST /api/resources
+
+Request Body: JSON object representing the resource to be created.
+
+Response: JSON object of the created resource.
+
+Example:
+
+json
+Copy
+{
+  "name": "Sample Resource",
+  "description": "This is a sample resource."
+}
+2. Get All Resources
+GET /api/resources
+
+Response: JSON array of all resources.
+
+3. Get a Single Resource by ID
+GET /api/resources/{id}
+
+Response: JSON object representing the resource.
+
+4. Update a Resource
+PUT /api/resources/{id}
+
+Request Body: JSON object representing the updated resource.
+
+Response: JSON object of the updated resource.
+
+5. Delete a Resource
+DELETE /api/resources/{id}
+
+Response: Status of the deletion.
 
 mongod
 
