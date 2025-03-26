@@ -19,6 +19,7 @@ Before you begin, make sure you have the following installed:
 - Java 21 (or newer)
 - Maven 3.8+ 
 - IDE of your choice (e.g., IntelliJ IDEA, Eclipse, VSCode)
+- PostgreSQL
 - Git (optional, for version control)
 
 ## Technologies
