@@ -22,7 +22,7 @@ public class CustomerRepository {
     }
 
     public List<Customer> getAllCustomers(){
-        return  IntStream.range(1, 100)
+        return  IntStream.range(1, 20)
                 .peek(CustomerRepository::sleepExecution)
                 .peek(i -> System.out.println("Processing item: "+i))
                 .mapToObj(i -> new Customer(i, "Customer "+i)).
