@@ -23,9 +23,18 @@ public class CustomerRepository {
 
     }
 
+    //Reactive style
     public Flux<Customer> getAllCustomersStream(){
         return Flux.range(1,20)
                 .delayElements(Duration.ofSeconds(1))
+                .doOnNext(i -> System.out.println("Processing item in stream : "+i))
+                .map(i -> new Customer(i, "Customer "+i));
+    }
+
+
+    public Flux<Customer> getAllCustomersStreamHandler(){
+        return Flux.range(1,30)
+                .delayElements(Duration.ofMillis(500))
                 .doOnNext(i -> System.out.println("Processing item in stream : "+i))
                 .map(i -> new Customer(i, "Customer "+i));
     }
