@@ -37,7 +37,7 @@ public class CustomerController {
         return customerService.saveCustomer(customerDto);
     }
 
-    @PutMapping("/update")
+    @PutMapping("/update/{id}")
     public Mono<CustomerDto> updateCustomer(@RequestBody Mono<CustomerDto> customerDto, @PathVariable Integer id) {
         return customerService.updateCustomer(customerDto,id);
     }
