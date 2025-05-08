@@ -87,9 +87,8 @@ DELETE /api/resources/{id}
 
 Response: Status of the deletion.
 
-mongod
+PostgreSQL
 
-spring.data.mongodb.uri=mongodb://localhost:27017/reactive-crud
-
+PostgreSQL configuration is in the docker-compose.yml and run commands are in the docker-cmmands and ports.txt
 
 This `README.md` provides an overview of setting up, configuring, and running a basic reactive Spring Boot CRUD application. It includes sections on prerequisites, technologies used, API endpoints, and running the application.
