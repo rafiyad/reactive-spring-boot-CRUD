@@ -1,0 +1,15 @@
+docker configure contains two files postgresql and pgadmin image
+
+1. start docker engine
+2. docker compose up
+
+3. pgadmin url: http://localhost:8888/
+   email: admin@admin.com
+   pass: admin
+
+ 4. DB:
+       POSTGRES_USER: admin
+       POSTGRES_PASSWORD: admin
+       POSTGRES_DB: mydb
+     ports:
+       - "5432:5432"

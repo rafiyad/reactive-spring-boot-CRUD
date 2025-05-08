@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ReactiveSpringBootCrudApplication {
 
     public static void main(String[] args) {
-
         SpringApplication.run(ReactiveSpringBootCrudApplication.class, args);
-    }
 
+
+    }
 }
